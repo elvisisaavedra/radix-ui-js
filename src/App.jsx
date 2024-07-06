@@ -1,6 +1,7 @@
 import DialogWithoutStyles from './components/dialogWithoutStyles'
 import DialogWithStyles from './components/dialogWithStyles'
 import DialogBootstrap from './components/dialogBootstrap'
+import DialogCustomAPI from './components/dialogCustomApi'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <DialogWithoutStyles />
       <DialogWithStyles />
       <DialogBootstrap />
+      <DialogCustomAPI />
     </>
   )
 }

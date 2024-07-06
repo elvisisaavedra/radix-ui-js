@@ -6,7 +6,7 @@ const DialogBootstrap = () => {
   };
 
   return (
-    <Dialog.Root defaultOpen={true}>
+    <Dialog.Root>
       <Dialog.Trigger asChild>
         <button>Dialog bootstrap</button>
       </Dialog.Trigger>
@@ -19,7 +19,7 @@ const DialogBootstrap = () => {
           <div className="modal-dialog">
             <div className="modal-content">
               <div className="modal-header">
-                <Dialog.Title as={'h1'} className='modal-title fs-5'>
+                <Dialog.Title className='modal-title fs-5'>
                   Modal title
                 </Dialog.Title>
 
