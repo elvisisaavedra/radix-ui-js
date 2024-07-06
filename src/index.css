@@ -39,3 +39,20 @@ body {font-family: Arial, Helvetica, sans-serif;}
   text-decoration: none;
   cursor: pointer;
 }
+
+/* Bootstrap overrides */
+.modal {
+  display: block;
+  max-width: var(--bs-modal-width);
+  margin: 0 auto;
+  position: relative;
+}
+
+.modal-dialog {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.modal-backdrop {
+  opacity: 0.2;
+}
