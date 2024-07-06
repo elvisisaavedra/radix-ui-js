@@ -24,8 +24,9 @@ const DialogWithoutStyles = () => (
           style={{ display: "flex", marginTop: 25, justifyContent: "flex-end" }}
         >
           <Dialog.Close asChild>
-            <button>Save changes</button>
+            <button>Close</button>
           </Dialog.Close>
+          <button>Save changes</button>
         </div>
         <Dialog.Close asChild>
           <button aria-label="Close">X</button>

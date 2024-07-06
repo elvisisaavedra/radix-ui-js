@@ -6,9 +6,9 @@ const DialogWithStyles = () => (
       <button>Dialog with styles</button>
     </Dialog.Trigger>
     <Dialog.Portal>
-      <Dialog.Overlay className="modal" />
-      <Dialog.Content className="modal-content">
-        <Dialog.Close className="close" asChild>
+      <Dialog.Overlay className="radix-modal" />
+      <Dialog.Content className="radix-modal-content">
+        <Dialog.Close className="radix-close" asChild>
           <button aria-label="Close">X</button>
         </Dialog.Close>
         <Dialog.Title>Edit profile</Dialog.Title>
@@ -27,8 +27,9 @@ const DialogWithStyles = () => (
           style={{ display: "flex", marginTop: 25, justifyContent: "flex-end" }}
         >
           <Dialog.Close asChild>
-            <button>Save changes</button>
+            <button>Close</button>
           </Dialog.Close>
+          <button>Save changes</button>
         </div>
       </Dialog.Content>
     </Dialog.Portal>
