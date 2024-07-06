@@ -1,9 +1,9 @@
-import * as Dialog from '@radix-ui/react-dialog';
+import * as Dialog from '@radix-ui/react-dialog'
 
 const DialogBootstrap = () => {
   const handleOnEscapeKeyDown = (event) => {
-    console.log('onEscapeKeyDown', event);
-  };
+    console.log('onEscapeKeyDown', event)
+  }
 
   return (
     <Dialog.Root>
@@ -19,12 +19,12 @@ const DialogBootstrap = () => {
           <div className="modal-dialog">
             <div className="modal-content">
               <div className="modal-header">
-                <Dialog.Title className='modal-title fs-5'>
+                <Dialog.Title className="modal-title fs-5">
                   Modal title
                 </Dialog.Title>
 
                 <Dialog.Close asChild>
-                  <button className="btn-close" aria-label="Close"></button>
+                  <button className="btn-close"></button>
                 </Dialog.Close>
               </div>
 
@@ -55,7 +55,7 @@ const DialogBootstrap = () => {
         <Dialog.Overlay className="modal-backdrop" />
       </Dialog.Portal>
     </Dialog.Root>
-  );
-};
+  )
+}
 
-export default DialogBootstrap;
+export default DialogBootstrap

@@ -29,7 +29,7 @@ const DialogContent = React.forwardRef(
               </DialogPrimitive.Title>
 
               <DialogPrimitive.Close asChild>
-                <button className="btn-close" aria-label="Close"></button>
+                <button className="btn-close"></button>
               </DialogPrimitive.Close>
             </div>
             {children}
@@ -54,7 +54,6 @@ DialogTitle.displayName = DialogPrimitive.Title.displayName;
 export {
   Dialog,
   DialogClose,
-  // DialogHeader,
   DialogFooter,
   DialogTrigger,
   DialogContent,
