@@ -6,7 +6,9 @@ const DialogWithStyles = () => (
     <Dialog.Portal>
       <Dialog.Overlay className="radix-modal" />
       <Dialog.Content className="radix-modal-content">
-        <Dialog.Close className="radix-close">X</Dialog.Close>
+        <Dialog.Close asChild>
+          <span className="radix-close">&times;</span>
+        </Dialog.Close>
         <Dialog.Title>Edit profile</Dialog.Title>
         <Dialog.Description>
           Make changes to your profile here. Click save when you are done.

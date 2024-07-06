@@ -8,7 +8,7 @@ const DialogTrigger = DialogPrimitive.Trigger;
 const DialogClose = DialogPrimitive.Close;
 
 const DialogFooter = ({ className, ...props }) => (
-  <div className={`modal-footer ${className}`} {...props} />
+  <div className={`modal-footer ${className ? className : ''}`} {...props} />
 );
 DialogFooter.displayName = 'DialogFooter';
 
@@ -17,7 +17,7 @@ const DialogContent = React.forwardRef(
     <DialogPrimitive.Portal>
       <DialogPrimitive.Content
         ref={ref}
-        className={`modal ${className}`}
+        className={`modal ${className ? className : ''}`}
         aria-describedby={undefined}
         {...props}
       >
@@ -45,7 +45,7 @@ DialogContent.displayName = DialogPrimitive.Content.displayName;
 const DialogTitle = React.forwardRef(({ className, ...props }, ref) => (
   <DialogPrimitive.Title
     ref={ref}
-    className={`modal-title fs-5 ${className}`}
+    className={`modal-title fs-5 ${className ? className : ''}`}
     {...props}
   />
 ));
