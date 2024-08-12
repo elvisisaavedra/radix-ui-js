@@ -3,6 +3,7 @@ import * as Dialog from '@radix-ui/react-dialog'
 const DialogBootstrap = () => {
   const handleOnEscapeKeyDown = (event) => {
     console.log('onEscapeKeyDown', event)
+    event.preventDefault()
   }
 
   return (

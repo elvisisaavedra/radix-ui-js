@@ -7,12 +7,17 @@ import {
 } from './ui/dialog'
 
 const DialogCustomAPI = () => {
+  const handleOnEscapeKeyDown = (event) => {
+    console.log('onEscapeKeyDown', event)
+    event.preventDefault()
+  }
+
   return (
     <Dialog>
       <DialogTrigger>
         Dialog Custom API
       </DialogTrigger>
-      <DialogContent title={'Modal title'}>
+      <DialogContent title={'Modal title'} onEscapeKeyDown={handleOnEscapeKeyDown}>
         <div className="modal-body">
           <fieldset>
             <label htmlFor="name">Name</label>
